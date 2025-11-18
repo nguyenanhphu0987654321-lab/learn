@@ -1,0 +1,155 @@
+{
+  "header": {
+    "logo": "LearnHub",
+    "courses": "Khóa học",
+    "categories": "Danh mục",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký"
+  },
+  "hero": {
+    "headline": "Học bất kỳ điều gì,",
+    "highlightedText": "Trở thành bất kỳ ai",
+    "subtext": "Truy cập hàng nghìn khóa học do chuyên gia dẫn dắt về công nghệ, kinh doanh, thiết kế và nhiều hơn nữa. Bắt đầu học ngay hôm nay và chuyển đổi tương lai của bạn.",
+    "browseCoursesBtn": "Duyệt khóa học",
+    "startLearningBtn": "Bắt đầu học",
+    "activeStudents": "Học viên hoạt động",
+    "expertCourses": "Khóa học chuyên gia",
+    "averageRating": "Xếp hạng trung bình"
+  },
+  "search": {
+    "placeholder": "Tìm kiếm khóa học..."
+  },
+  "categories": {
+    "title": "Khám phá các danh mục",
+    "subtitle": "Tìm khóa học trong bất kỳ chủ đề nào bạn quan tâm",
+    "technology": "Công nghệ",
+    "business": "Kinh doanh",
+    "design": "Thiết kế",
+    "marketing": "Tiếp thị",
+    "personalDevelopment": "Phát triển cá nhân",
+    "healthWellness": "Sức khỏe và Wellness",
+    "course": "khóa học",
+    "courses": "khóa học"
+  },
+  "popularCourses": {
+    "title": "Khóa học phổ biến",
+    "subtitle": "Các khóa học xu hướng được yêu thích bởi hàng ngàn người học",
+    "viewAll": "Xem tất cả khóa học",
+    "instructor": "Giảng viên",
+    "lessons": "bài học",
+    "students": "học viên",
+    "difficulty": {
+      "beginner": "Người mới bắt đầu",
+      "intermediate": "Trung cấp",
+      "advanced": "Nâng cao"
+    }
+  },
+  "testimonials": {
+    "title": "Những gì học viên nói",
+    "subtitle": "Tham gia hàng ngàn người học thành công đã chuyển đổi sự nghiệp của họ",
+    "role": "Chức vụ"
+  },
+  "cta": {
+    "title": "Sẵn sàng bắt đầu học?",
+    "subtitle": "Tham gia hàng ngàn học viên đang học trên LearnHub. Bắt đầu ngay hôm nay với bản dùng thử miễn phí của bạn.",
+    "startFreeTrialBtn": "Bắt đầu dùng thử miễn phí",
+    "explorePricingBtn": "Khám phá giá cả",
+    "note": "Không cần thẻ tín dụng. Truy cập 7 ngày miễn phí vào tất cả các khóa học cao cấp."
+  },
+  "footer": {
+    "brand": "LearnHub",
+    "tagline": "Học bất kỳ điều gì, trở thành bất kỳ ai. Bắt đầu hành trình học tập của bạn ngay hôm nay.",
+    "courses": "Khóa học",
+    "allCourses": "Tất cả khóa học",
+    "popular": "Phổ biến",
+    "new": "Mới",
+    "company": "Công ty",
+    "aboutUs": "Về chúng tôi",
+    "careers": "Cơ hội việc làm",
+    "blog": "Blog",
+    "support": "Hỗ trợ",
+    "helpCenter": "Trung tâm trợ giúp",
+    "contactUs": "Liên hệ chúng tôi",
+    "faq": "Câu hỏi thường gặp",
+    "legal": "Pháp lý",
+    "privacyPolicy": "Chính sách bảo mật",
+    "termsOfService": "Điều khoản dịch vụ",
+    "cookiePolicy": "Chính sách cookie",
+    "copyright": "© 2024 LearnHub. Tất cả quyền được bảo lưu.",
+    "followUs": "Theo dõi chúng tôi",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "facebook": "Facebook"
+  },
+  "coursesPage": {
+    "title": "Tất cả khóa học",
+    "subtitle": "Chọn từ {count} khóa học do chuyên gia hướng dẫn",
+    "filters": "Bộ lọc",
+    "search": "Tìm kiếm",
+    "searchPlaceholder": "Tìm kiếm khóa học...",
+    "difficulty": "Mức độ khó",
+    "allLevels": "Tất cả các cấp",
+    "sortBy": "Sắp xếp theo",
+    "mostPopular": "Phổ biến nhất",
+    "highestRated": "Được đánh giá cao nhất",
+    "priceLowToHigh": "Giá: Thấp đến Cao",
+    "priceHighToLow": "Giá: Cao đến Thấp",
+    "noResults": "Không tìm thấy khóa học",
+    "noResultsText": "Hãy thử điều chỉnh bộ lọc hoặc truy vấn tìm kiếm của bạn",
+    "viewCourse": "Xem khóa học"
+  },
+  "courseDetail": {
+    "enrollNow": "Đăng ký ngay",
+    "whatYouWillLearn": "Những gì bạn sẽ học",
+    "courseDetails": "Chi tiết khóa học",
+    "hoursOfContent": "Giờ nội dung",
+    "difficulty": "Mức độ khó",
+    "certificate": "Chứng chỉ",
+    "uponCompletion": "Sau khi hoàn thành",
+    "aboutTheInstructor": "Về giảng viên",
+    "overview": "Tổng quan",
+    "curriculum": "Chương trình",
+    "reviews": "Đánh giá",
+    "hoursAgo": "giờ trước",
+    "daysAgo": "ngày trước",
+    "monthsAgo": "tháng trước",
+    "weeksAgo": "tuần trước"
+  },
+  "dashboard": {
+    "welcomeTitle": "Chào mừng trở lại, {name}!",
+    "welcomeSubtitle": "Tiếp tục hành trình học tập của bạn và đạt được những mục tiêu của bạn",
+    "signOut": "Đăng xuất",
+    "myCourses": "Khóa học của tôi",
+    "certificates": "Chứng chỉ",
+    "settings": "Cài đặt",
+    "coursesEnrolled": "Khóa học đã đăng ký",
+    "completed": "Hoàn thành",
+    "avgProgress": "Tiến độ trung bình",
+    "progress": "Tiến độ",
+    "continue": "Tiếp tục",
+    "viewCertificate": "Xem chứng chỉ",
+    "completedOn": "Hoàn thành vào {date}",
+    "noCertificates": "Hoàn thành các khóa học để nhận chứng chỉ",
+    "accountSettings": "Cài đặt tài khoản",
+    "email": "Email",
+    "fullName": "Họ và tên",
+    "preferences": "Tùy chọn",
+    "emailRecommendations": "Gửi email cho tôi về các khóa học được khuyến nghị",
+    "notifyNewCourses": "Thông báo cho tôi khi có các khóa học mới",
+    "dangerZone": "Vùng nguy hiểm",
+    "deleteAccount": "Xóa tài khoản"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "subtitle": "Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã bị chuyển.",
+    "returnHome": "Quay lại trang chủ"
+  },
+  "language": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "selectLanguage": "Chọn ngôn ngữ"
+  }
+}
