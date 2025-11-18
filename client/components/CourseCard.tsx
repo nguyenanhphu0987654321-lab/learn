@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Star, Users, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface CourseCardProps {
   id: string;
