@@ -183,7 +183,7 @@ export default function Index() {
           <div className="relative max-w-2xl mx-auto">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <Input
-              placeholder="Search for courses..."
+              placeholder={t('search.placeholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-12 py-6 text-base border-gray-200"
@@ -197,10 +197,10 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Explore Categories
+              {t('categories.title')}
             </h2>
             <p className="text-gray-600 text-lg">
-              Find courses in any subject you're interested in
+              {t('categories.subtitle')}
             </p>
           </div>
 
