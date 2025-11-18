@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="container mx-auto px-4">
@@ -12,30 +14,30 @@ export default function Footer() {
               <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold">
                 L
               </div>
-              <span className="font-bold text-white text-lg">LearnHub</span>
+              <span className="font-bold text-white text-lg">{t('footer.brand')}</span>
             </div>
             <p className="text-sm text-gray-400">
-              Learn anything, become anything. Start your learning journey today.
+              {t('footer.tagline')}
             </p>
           </div>
 
           {/* Courses */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Courses</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.courses')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/courses" className="hover:text-blue-400 transition">
-                  All Courses
+                  {t('footer.allCourses')}
                 </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Popular
+                  {t('footer.popular')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  New
+                  {t('footer.new')}
                 </a>
               </li>
             </ul>
@@ -43,21 +45,21 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  About Us
+                  {t('footer.aboutUs')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Careers
+                  {t('footer.careers')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Blog
+                  {t('footer.blog')}
                 </a>
               </li>
             </ul>
@@ -65,21 +67,21 @@ export default function Footer() {
 
           {/* Support */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Support</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.support')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Help Center
+                  {t('footer.helpCenter')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Contact Us
+                  {t('footer.contactUs')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  FAQ
+                  {t('footer.faq')}
                 </a>
               </li>
             </ul>
@@ -87,21 +89,21 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Legal</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.legal')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Privacy Policy
+                  {t('footer.privacyPolicy')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Terms of Service
+                  {t('footer.termsOfService')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-blue-400 transition">
-                  Cookie Policy
+                  {t('footer.cookiePolicy')}
                 </a>
               </li>
             </ul>
@@ -110,16 +112,16 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 LearnHub. All rights reserved.</p>
+            <p>{t('footer.copyright')}</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-blue-400 transition">
-                Twitter
+                {t('footer.twitter')}
               </a>
               <a href="#" className="hover:text-blue-400 transition">
-                LinkedIn
+                {t('footer.linkedin')}
               </a>
               <a href="#" className="hover:text-blue-400 transition">
-                Facebook
+                {t('footer.facebook')}
               </a>
             </div>
           </div>
