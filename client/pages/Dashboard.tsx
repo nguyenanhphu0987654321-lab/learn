@@ -175,7 +175,7 @@ export default function Dashboard() {
               {activeTab === "certificates" && (
                 <div className="bg-white rounded-lg shadow-sm p-6">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                    My Certificates
+                    {t('dashboard.certificates')}
                   </h2>
 
                   {certificates.length > 0 ? (
@@ -192,13 +192,12 @@ export default function Dashboard() {
                                 {cert.course}
                               </h3>
                               <p className="text-sm text-gray-600">
-                                Completed on{" "}
-                                {new Date(cert.completedDate).toLocaleDateString()}
+                                {t('dashboard.completedOn', 'Completed on {date}').replace('{date}', new Date(cert.completedDate).toLocaleDateString())}
                               </p>
                             </div>
                           </div>
                           <Button variant="outline" size="sm">
-                            View Certificate
+                            {t('dashboard.viewCertificate')}
                           </Button>
                         </div>
                       ))}
@@ -207,7 +206,7 @@ export default function Dashboard() {
                     <div className="text-center py-12">
                       <Award className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                       <p className="text-gray-600">
-                        Complete courses to earn certificates
+                        {t('dashboard.noCertificates')}
                       </p>
                     </div>
                   )}
