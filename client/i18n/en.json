@@ -1,0 +1,155 @@
+{
+  "header": {
+    "logo": "LearnHub",
+    "courses": "Courses",
+    "categories": "Categories",
+    "about": "About",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "hero": {
+    "headline": "Learn Anything,",
+    "highlightedText": "Become Anything",
+    "subtext": "Access thousands of expert-led courses across technology, business, design, and more. Start learning today and transform your future.",
+    "browseCoursesBtn": "Browse Courses",
+    "startLearningBtn": "Start Learning",
+    "activeStudents": "Active Students",
+    "expertCourses": "Expert Courses",
+    "averageRating": "Average Rating"
+  },
+  "search": {
+    "placeholder": "Search for courses..."
+  },
+  "categories": {
+    "title": "Explore Categories",
+    "subtitle": "Find courses in any subject you're interested in",
+    "technology": "Technology",
+    "business": "Business",
+    "design": "Design",
+    "marketing": "Marketing",
+    "personalDevelopment": "Personal Development",
+    "healthWellness": "Health & Wellness",
+    "course": "course",
+    "courses": "courses"
+  },
+  "popularCourses": {
+    "title": "Popular Courses",
+    "subtitle": "Trending courses loved by thousands of learners",
+    "viewAll": "View All Courses",
+    "instructor": "Instructor",
+    "lessons": "lessons",
+    "students": "students",
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    }
+  },
+  "testimonials": {
+    "title": "What Students Say",
+    "subtitle": "Join thousands of successful learners who've transformed their careers",
+    "role": "Role"
+  },
+  "cta": {
+    "title": "Ready to Start Learning?",
+    "subtitle": "Join thousands of students already learning on LearnHub. Get started today with your free trial.",
+    "startFreeTrialBtn": "Start Free Trial",
+    "explorePricingBtn": "Explore Pricing",
+    "note": "No credit card required. 7-day free access to all premium courses."
+  },
+  "footer": {
+    "brand": "LearnHub",
+    "tagline": "Learn anything, become anything. Start your learning journey today.",
+    "courses": "Courses",
+    "allCourses": "All Courses",
+    "popular": "Popular",
+    "new": "New",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "blog": "Blog",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contactUs": "Contact Us",
+    "faq": "FAQ",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© 2024 LearnHub. All rights reserved.",
+    "followUs": "Follow Us",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "facebook": "Facebook"
+  },
+  "coursesPage": {
+    "title": "All Courses",
+    "subtitle": "Choose from {count} expert-led courses",
+    "filters": "Filters",
+    "search": "Search",
+    "searchPlaceholder": "Search courses...",
+    "difficulty": "Difficulty",
+    "allLevels": "All Levels",
+    "sortBy": "Sort By",
+    "mostPopular": "Most Popular",
+    "highestRated": "Highest Rated",
+    "priceLowToHigh": "Price: Low to High",
+    "priceHighToLow": "Price: High to Low",
+    "noResults": "No courses found",
+    "noResultsText": "Try adjusting your filters or search query",
+    "viewCourse": "View Course"
+  },
+  "courseDetail": {
+    "enrollNow": "Enroll Now",
+    "whatYouWillLearn": "What You'll Learn",
+    "courseDetails": "Course Details",
+    "hoursOfContent": "Hours of Content",
+    "difficulty": "Difficulty",
+    "certificate": "Certificate",
+    "uponCompletion": "Upon Completion",
+    "aboutTheInstructor": "About the Instructor",
+    "overview": "Overview",
+    "curriculum": "Curriculum",
+    "reviews": "Reviews",
+    "hoursAgo": "hours ago",
+    "daysAgo": "days ago",
+    "monthsAgo": "months ago",
+    "weeksAgo": "weeks ago"
+  },
+  "dashboard": {
+    "welcomeTitle": "Welcome back, {name}!",
+    "welcomeSubtitle": "Continue your learning journey and achieve your goals",
+    "signOut": "Sign Out",
+    "myCourses": "My Courses",
+    "certificates": "Certificates",
+    "settings": "Settings",
+    "coursesEnrolled": "Courses Enrolled",
+    "completed": "Completed",
+    "avgProgress": "Avg. Progress",
+    "progress": "Progress",
+    "continue": "Continue",
+    "viewCertificate": "View Certificate",
+    "completedOn": "Completed on {date}",
+    "noCertificates": "Complete courses to earn certificates",
+    "accountSettings": "Account Settings",
+    "email": "Email",
+    "fullName": "Full Name",
+    "preferences": "Preferences",
+    "emailRecommendations": "Email me about course recommendations",
+    "notifyNewCourses": "Notify me when new courses are available",
+    "dangerZone": "Danger Zone",
+    "deleteAccount": "Delete Account"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "Sorry, the page you're looking for doesn't exist or has been moved.",
+    "returnHome": "Return to Home"
+  },
+  "language": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "selectLanguage": "Select Language"
+  }
+}
