@@ -107,21 +107,21 @@ export default function Dashboard() {
               {activeTab === "courses" && (
                 <div>
                   <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">My Courses</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('dashboard.myCourses')}</h2>
 
                     {/* Stats */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 pb-8 border-b border-gray-200">
                       <div className="bg-blue-50 rounded-lg p-4">
                         <div className="text-2xl font-bold text-blue-600 mb-1">3</div>
-                        <p className="text-gray-600 text-sm">Courses Enrolled</p>
+                        <p className="text-gray-600 text-sm">{t('dashboard.coursesEnrolled')}</p>
                       </div>
                       <div className="bg-green-50 rounded-lg p-4">
                         <div className="text-2xl font-bold text-green-600 mb-1">2</div>
-                        <p className="text-gray-600 text-sm">Completed</p>
+                        <p className="text-gray-600 text-sm">{t('dashboard.completed')}</p>
                       </div>
                       <div className="bg-purple-50 rounded-lg p-4">
                         <div className="text-2xl font-bold text-purple-600 mb-1">63%</div>
-                        <p className="text-gray-600 text-sm">Avg. Progress</p>
+                        <p className="text-gray-600 text-sm">{t('dashboard.avgProgress')}</p>
                       </div>
                     </div>
 
