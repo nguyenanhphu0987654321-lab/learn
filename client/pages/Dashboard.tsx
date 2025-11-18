@@ -62,15 +62,15 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                  Welcome back, Alex! 👋
+                  {t('dashboard.welcomeTitle', 'Welcome back, {name}!').replace('{name}', 'Alex')} 👋
                 </h1>
                 <p className="text-gray-600">
-                  Continue your learning journey and achieve your goals
+                  {t('dashboard.welcomeSubtitle')}
                 </p>
               </div>
               <Button variant="outline" className="gap-2">
                 <LogOut className="w-4 h-4" />
-                Sign Out
+                {t('dashboard.signOut')}
               </Button>
             </div>
           </div>
