@@ -157,30 +157,30 @@ export default function CourseDetail() {
 
               {/* Course Info */}
               <div className="bg-gray-50 rounded-lg p-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Course Details</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('courseDetail.courseDetails')}</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div>
                     <div className="text-2xl font-bold text-blue-500 mb-2">{course.hours}</div>
-                    <p className="text-gray-600 text-sm">Hours of Content</p>
+                    <p className="text-gray-600 text-sm">{t('courseDetail.hoursOfContent')}</p>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-blue-500 mb-2">{course.lessons}</div>
-                    <p className="text-gray-600 text-sm">Lessons</p>
+                    <p className="text-gray-600 text-sm">{t('popularCourses.lessons')}</p>
                   </div>
                   <div>
                     <div className="text-2xl font-bold text-blue-500 mb-2">{course.difficulty}</div>
-                    <p className="text-gray-600 text-sm">Difficulty</p>
+                    <p className="text-gray-600 text-sm">{t('courseDetail.difficulty')}</p>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-blue-500 mb-2">Certificate</div>
-                    <p className="text-gray-600 text-sm">Upon Completion</p>
+                    <div className="text-2xl font-bold text-blue-500 mb-2">{t('courseDetail.certificate')}</div>
+                    <p className="text-gray-600 text-sm">{t('courseDetail.uponCompletion')}</p>
                   </div>
                 </div>
               </div>
 
               {/* Instructor Profile */}
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">About the Instructor</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('courseDetail.aboutTheInstructor')}</h2>
                 <div className="flex gap-6">
                   <img
                     src={course.instructorImage}
