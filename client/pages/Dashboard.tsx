@@ -148,7 +148,7 @@ export default function Dashboard() {
                             {/* Progress Bar */}
                             <div className="mb-3">
                               <div className="flex items-center justify-between mb-1">
-                                <span className="text-sm text-gray-600">Progress</span>
+                                <span className="text-sm text-gray-600">{t('dashboard.progress')}</span>
                                 <span className="text-sm font-semibold text-gray-900">
                                   {course.progress}%
                                 </span>
@@ -162,7 +162,7 @@ export default function Dashboard() {
                             </div>
                           </div>
                           <Button variant="outline" size="sm">
-                            Continue
+                            {t('dashboard.continue')}
                           </Button>
                         </div>
                       ))}
