@@ -72,6 +72,7 @@ const mockCourseDetail = {
 
 export default function CourseDetail() {
   const { id } = useParams();
+  const { t } = useLanguage();
   const course = mockCourseDetail;
 
   return (
