@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Star, Users, BookOpen, Award, CheckCircle, MessageSquare } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const mockCourseDetail = {
   id: "1",
