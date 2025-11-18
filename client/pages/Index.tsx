@@ -217,10 +217,10 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Popular Courses
+              {t('popularCourses.title')}
             </h2>
             <p className="text-gray-600 text-lg">
-              Trending courses loved by thousands of learners
+              {t('popularCourses.subtitle')}
             </p>
           </div>
 
@@ -233,7 +233,7 @@ export default function Index() {
           <div className="text-center">
             <Link to="/courses">
               <Button size="lg" variant="outline">
-                View All Courses <ArrowRight className="w-4 h-4 ml-2" />
+                {t('popularCourses.viewAll')} <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
@@ -245,10 +245,10 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Students Say
+              {t('testimonials.title')}
             </h2>
             <p className="text-gray-600 text-lg">
-              Join thousands of successful learners who've transformed their careers
+              {t('testimonials.subtitle')}
             </p>
           </div>
 
