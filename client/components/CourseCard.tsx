@@ -69,7 +69,7 @@ export default function CourseCard({
             <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
               <div className="flex items-center gap-1">
                 <BookOpen className="w-4 h-4" />
-                <span>{lessons} lessons</span>
+                <span>{lessons} {t('popularCourses.lessons')}</span>
               </div>
               <div className="flex items-center gap-1">
                 <Users className="w-4 h-4" />
