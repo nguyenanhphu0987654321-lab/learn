@@ -144,7 +144,7 @@ export default function CourseDetail() {
             <TabsContent value="overview" className="space-y-8">
               {/* What You'll Learn */}
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">What You'll Learn</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('courseDetail.whatYouWillLearn')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {course.whatYouWillLearn.map((item, index) => (
                     <div key={index} className="flex gap-3">
