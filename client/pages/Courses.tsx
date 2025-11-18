@@ -127,9 +127,9 @@ export default function Courses() {
       {/* Header */}
       <section className="bg-gradient-to-br from-blue-50 to-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">All Courses</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('coursesPage.title')}</h1>
           <p className="text-gray-600 text-lg">
-            Choose from {mockCourses.length} expert-led courses
+            {t('coursesPage.subtitle', `Choose from ${mockCourses.length} expert-led courses`).replace('{count}', mockCourses.length.toString())}
           </p>
         </div>
       </section>
@@ -143,16 +143,16 @@ export default function Courses() {
               <div className="bg-gray-50 rounded-lg p-6 sticky top-20">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
                   <SlidersHorizontal className="w-4 h-4" />
-                  Filters
+                  {t('coursesPage.filters')}
                 </h3>
 
                 {/* Search */}
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Search
+                    {t('coursesPage.search')}
                   </label>
                   <Input
-                    placeholder="Search courses..."
+                    placeholder={t('coursesPage.searchPlaceholder')}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="bg-white"
@@ -162,17 +162,17 @@ export default function Courses() {
                 {/* Difficulty */}
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Difficulty
+                    {t('coursesPage.difficulty')}
                   </label>
                   <Select value={filterDifficulty} onValueChange={setFilterDifficulty}>
                     <SelectTrigger className="bg-white">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="all">All Levels</SelectItem>
-                      <SelectItem value="Beginner">Beginner</SelectItem>
-                      <SelectItem value="Intermediate">Intermediate</SelectItem>
-                      <SelectItem value="Advanced">Advanced</SelectItem>
+                      <SelectItem value="all">{t('coursesPage.allLevels')}</SelectItem>
+                      <SelectItem value="Beginner">{t('popularCourses.difficulty.beginner')}</SelectItem>
+                      <SelectItem value="Intermediate">{t('popularCourses.difficulty.intermediate')}</SelectItem>
+                      <SelectItem value="Advanced">{t('popularCourses.difficulty.advanced')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -180,17 +180,17 @@ export default function Courses() {
                 {/* Sort */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Sort By
+                    {t('coursesPage.sortBy')}
                   </label>
                   <Select value={sortBy} onValueChange={setSortBy}>
                     <SelectTrigger className="bg-white">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="popular">Most Popular</SelectItem>
-                      <SelectItem value="rating">Highest Rated</SelectItem>
-                      <SelectItem value="price-low">Price: Low to High</SelectItem>
-                      <SelectItem value="price-high">Price: High to Low</SelectItem>
+                      <SelectItem value="popular">{t('coursesPage.mostPopular')}</SelectItem>
+                      <SelectItem value="rating">{t('coursesPage.highestRated')}</SelectItem>
+                      <SelectItem value="price-low">{t('coursesPage.priceLowToHigh')}</SelectItem>
+                      <SelectItem value="price-high">{t('coursesPage.priceHighToLow')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -209,10 +209,10 @@ export default function Courses() {
                 <div className="text-center py-12">
                   <Search className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    No courses found
+                    {t('coursesPage.noResults')}
                   </h3>
                   <p className="text-gray-600">
-                    Try adjusting your filters or search query
+                    {t('coursesPage.noResultsText')}
                   </p>
                 </div>
               )}
