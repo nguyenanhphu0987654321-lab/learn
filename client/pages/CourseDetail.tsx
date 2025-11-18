@@ -135,9 +135,9 @@ export default function CourseDetail() {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="overview" className="w-full">
             <TabsList className="grid w-full md:w-auto md:grid-cols-3 mb-8 bg-gray-100">
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="curriculum">Curriculum</TabsTrigger>
-              <TabsTrigger value="reviews">Reviews</TabsTrigger>
+              <TabsTrigger value="overview">{t('courseDetail.overview')}</TabsTrigger>
+              <TabsTrigger value="curriculum">{t('courseDetail.curriculum')}</TabsTrigger>
+              <TabsTrigger value="reviews">{t('courseDetail.reviews')}</TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
