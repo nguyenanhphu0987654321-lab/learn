@@ -1,0 +1,155 @@
+{
+  "header": {
+    "logo": "LearnHub",
+    "courses": "コース",
+    "categories": "カテゴリ",
+    "about": "について",
+    "contact": "お問い合わせ",
+    "signIn": "サインイン",
+    "signUp": "サインアップ"
+  },
+  "hero": {
+    "headline": "何でも学べます。",
+    "highlightedText": "何にでもなれます。",
+    "subtext": "テクノロジー、ビジネス、デザインなど、数千の専門家主導のコースにアクセスしてください。今日から学習を始めて、あなたの未来を変えましょう。",
+    "browseCoursesBtn": "コースを閲覧",
+    "startLearningBtn": "学習を開始",
+    "activeStudents": "アクティブなスチューデント",
+    "expertCourses": "専門家向けコース",
+    "averageRating": "平均評��"
+  },
+  "search": {
+    "placeholder": "コースを検索..."
+  },
+  "categories": {
+    "title": "カテゴリを探索",
+    "subtitle": "興味のあるコースを見つけてください",
+    "technology": "テクノロジー",
+    "business": "ビジネス",
+    "design": "デザイン",
+    "marketing": "マーケティング",
+    "personalDevelopment": "自己啓発",
+    "healthWellness": "健康とウェルネス",
+    "course": "コース",
+    "courses": "コース"
+  },
+  "popularCourses": {
+    "title": "人気のコース",
+    "subtitle": "何千人もの学習者に愛されているトレンドコース",
+    "viewAll": "すべてのコースを表示",
+    "instructor": "インストラクター",
+    "lessons": "レッスン",
+    "students": "学生",
+    "difficulty": {
+      "beginner": "初級者",
+      "intermediate": "中級者",
+      "advanced": "上級者"
+    }
+  },
+  "testimonials": {
+    "title": "学生の声",
+    "subtitle": "キャリアを変えた成功した学習者の声を聞く",
+    "role": "職業"
+  },
+  "cta": {
+    "title": "学習を始める準備はできていますか?",
+    "subtitle": "LearnHubで既に学習してい���何千人もの学生に参加してください。無料トライアルで今すぐ始めましょう。",
+    "startFreeTrialBtn": "無料トライアルを開始",
+    "explorePricingBtn": "料金を確認",
+    "note": "クレジットカード不要。すべてのプレミアムコースに7日間無料でアクセスできます。"
+  },
+  "footer": {
+    "brand": "LearnHub",
+    "tagline": "何でも学べます、何にでもなれます。今日から学習の旅を始めましょう。",
+    "courses": "コース",
+    "allCourses": "すべてのコース",
+    "popular": "人気",
+    "new": "新着",
+    "company": "企業",
+    "aboutUs": "私たちについて",
+    "careers": "キャリア",
+    "blog": "ブログ",
+    "support": "サポート",
+    "helpCenter": "ヘルプセンター",
+    "contactUs": "お問い合わせ",
+    "faq": "よくある質問",
+    "legal": "法律",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "cookiePolicy": "クッキーポリシー",
+    "copyright": "© 2024 LearnHub。著作権所有。",
+    "followUs": "フォローする",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "facebook": "Facebook"
+  },
+  "coursesPage": {
+    "title": "すべてのコース",
+    "subtitle": "{count}個の専門家主導のコースから選択",
+    "filters": "フィルター",
+    "search": "検索",
+    "searchPlaceholder": "コースを検索...",
+    "difficulty": "難易度",
+    "allLevels": "すべてのレベル",
+    "sortBy": "並べ替え",
+    "mostPopular": "最も人気",
+    "highestRated": "最高評価",
+    "priceLowToHigh": "価格:低から高へ",
+    "priceHighToLow": "価格:高から低へ",
+    "noResults": "コースが見つかりません",
+    "noResultsText": "フィルターまたは検索クエリを調整してみてください",
+    "viewCourse": "コースを表示"
+  },
+  "courseDetail": {
+    "enrollNow": "今すぐ登録",
+    "whatYouWillLearn": "学ぶこと",
+    "courseDetails": "コースの詳細",
+    "hoursOfContent": "コンテンツの時間",
+    "difficulty": "難易度",
+    "certificate": "証明書",
+    "uponCompletion": "完了時",
+    "aboutTheInstructor": "インストラクターについて",
+    "overview": "概要",
+    "curriculum": "カリキュラム",
+    "reviews": "レビュー",
+    "hoursAgo": "時間前",
+    "daysAgo": "日前",
+    "monthsAgo": "ヶ月前",
+    "weeksAgo": "週前"
+  },
+  "dashboard": {
+    "welcomeTitle": "{name}さん、おかえりなさい!",
+    "welcomeSubtitle": "学習の旅を続けて、目標を達成しましょう",
+    "signOut": "サインアウト",
+    "myCourses": "私のコース",
+    "certificates": "証明書",
+    "settings": "設定",
+    "coursesEnrolled": "登録したコース",
+    "completed": "完了",
+    "avgProgress": "平均進捗状況",
+    "progress": "進捗状況",
+    "continue": "続行",
+    "viewCertificate": "証明書を表示",
+    "completedOn": "{date}に完了",
+    "noCertificates": "証明書を取得するにはコースを完了してください",
+    "accountSettings": "アカウント設定",
+    "email": "メール",
+    "fullName": "フルネーム",
+    "preferences": "設定",
+    "emailRecommendations": "コースのおすすめについてメールを送信してください",
+    "notifyNewCourses": "新しいコースが利用可能な場合は通知する",
+    "dangerZone": "危険ゾーン",
+    "deleteAccount": "アカウントを削除"
+  },
+  "notFound": {
+    "title": "ページが見つかりませ��",
+    "subtitle": "申し訳ございません。お探しのページは存在しないか、移動した可能性があります。",
+    "returnHome": "ホームに戻る"
+  },
+  "language": {
+    "en": "English",
+    "vi": "Tiếng Việt",
+    "ja": "日本語",
+    "selectLanguage": "言語を選択"
+  }
+}
