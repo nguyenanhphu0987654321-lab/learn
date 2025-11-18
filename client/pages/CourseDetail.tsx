@@ -114,7 +114,7 @@ export default function CourseDetail() {
 
               {/* CTA Button */}
               <Button size="lg" className="w-full sm:w-auto sticky bottom-4 sm:sticky-none">
-                Enroll Now - ${course.price}
+                {t('courseDetail.enrollNow')} - ${course.price}
               </Button>
             </div>
 
