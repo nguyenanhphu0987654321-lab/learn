@@ -15,6 +15,8 @@ export default function CategoryCard({
   icon,
   courseCount,
 }: CategoryCardProps) {
+  const { t } = useLanguage();
+
   return (
     <Link to={`/courses?category=${id}`}>
       <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition p-6 text-center cursor-pointer h-full flex flex-col items-center justify-center gap-4">
@@ -24,7 +26,7 @@ export default function CategoryCard({
         <div>
           <h3 className="font-semibold text-gray-900 mb-1">{name}</h3>
           <p className="text-sm text-gray-600">
-            {courseCount} {courseCount === 1 ? "course" : "courses"}
+            {courseCount} {courseCount === 1 ? t('categories.course') : t('categories.courses')}
           </p>
         </div>
       </div>
