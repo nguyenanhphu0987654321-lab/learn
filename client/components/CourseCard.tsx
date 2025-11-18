@@ -91,7 +91,7 @@ export default function CourseCard({
               <span className="font-bold text-lg text-gray-900">${price}</span>
             )}
             <Button size="sm" variant="outline">
-              View Course
+              {t('coursesPage.viewCourse')}
             </Button>
           </div>
         </div>
