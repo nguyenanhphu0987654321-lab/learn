@@ -28,6 +28,8 @@ export default function CourseCard({
   thumbnail,
   price,
 }: CourseCardProps) {
+  const { t } = useLanguage();
+
   const difficultyColors = {
     Beginner: "bg-green-100 text-green-700",
     Intermediate: "bg-yellow-100 text-yellow-700",
