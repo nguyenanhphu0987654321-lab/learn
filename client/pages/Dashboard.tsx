@@ -1,6 +1,13 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Award, Settings, LogOut, Clock, CheckCircle2 } from "lucide-react";
+import {
+  BookOpen,
+  Award,
+  Settings,
+  LogOut,
+  Clock,
+  CheckCircle2,
+} from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -10,21 +17,24 @@ const myCourses = [
     title: "Python for Beginners",
     instructor: "John Smith",
     progress: 65,
-    thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200&h=150&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200&h=150&fit=crop",
   },
   {
     id: "2",
     title: "Web Development Masterclass",
     instructor: "Sarah Johnson",
     progress: 40,
-    thumbnail: "https://images.unsplash.com/photo-1633356122544-f134324ef6cb?w=200&h=150&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1633356122544-f134324ef6cb?w=200&h=150&fit=crop",
   },
   {
     id: "3",
     title: "UI/UX Design Fundamentals",
     instructor: "Mike Davis",
     progress: 85,
-    thumbnail: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=200&h=150&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=200&h=150&fit=crop",
   },
 ];
 
@@ -45,12 +55,14 @@ const certificates = [
 
 export default function Dashboard() {
   const { t } = useLanguage();
-  const [activeTab, setActiveTab] = useState<"courses" | "certificates" | "settings">("courses");
+  const [activeTab, setActiveTab] = useState<
+    "courses" | "certificates" | "settings"
+  >("courses");
 
   const menuItems = [
-    { id: "courses", label: t('dashboard.myCourses'), icon: BookOpen },
-    { id: "certificates", label: t('dashboard.certificates'), icon: Award },
-    { id: "settings", label: t('dashboard.settings'), icon: Settings },
+    { id: "courses", label: t("dashboard.myCourses"), icon: BookOpen },
+    { id: "certificates", label: t("dashboard.certificates"), icon: Award },
+    { id: "settings", label: t("dashboard.settings"), icon: Settings },
   ];
 
   return (
@@ -62,15 +74,19 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                  {t('dashboard.welcomeTitle', 'Welcome back, {name}!').replace('{name}', 'Alex')} 👋
+                  {t("dashboard.welcomeTitle", "Welcome back, {name}!").replace(
+                    "{name}",
+                    "Alex",
+                  )}{" "}
+                  👋
                 </h1>
                 <p className="text-gray-600">
-                  {t('dashboard.welcomeSubtitle')}
+                  {t("dashboard.welcomeSubtitle")}
                 </p>
               </div>
               <Button variant="outline" className="gap-2">
                 <LogOut className="w-4 h-4" />
-                {t('dashboard.signOut')}
+                {t("dashboard.signOut")}
               </Button>
             </div>
           </div>
@@ -107,21 +123,35 @@ export default function Dashboard() {
               {activeTab === "courses" && (
                 <div>
                   <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('dashboard.myCourses')}</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                      {t("dashboard.myCourses")}
+                    </h2>
 
                     {/* Stats */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 pb-8 border-b border-gray-200">
                       <div className="bg-blue-50 rounded-lg p-4">
-                        <div className="text-2xl font-bold text-blue-600 mb-1">3</div>
-                        <p className="text-gray-600 text-sm">{t('dashboard.coursesEnrolled')}</p>
+                        <div className="text-2xl font-bold text-blue-600 mb-1">
+                          3
+                        </div>
+                        <p className="text-gray-600 text-sm">
+                          {t("dashboard.coursesEnrolled")}
+                        </p>
                       </div>
                       <div className="bg-green-50 rounded-lg p-4">
-                        <div className="text-2xl font-bold text-green-600 mb-1">2</div>
-                        <p className="text-gray-600 text-sm">{t('dashboard.completed')}</p>
+                        <div className="text-2xl font-bold text-green-600 mb-1">
+                          2
+                        </div>
+                        <p className="text-gray-600 text-sm">
+                          {t("dashboard.completed")}
+                        </p>
                       </div>
                       <div className="bg-purple-50 rounded-lg p-4">
-                        <div className="text-2xl font-bold text-purple-600 mb-1">63%</div>
-                        <p className="text-gray-600 text-sm">{t('dashboard.avgProgress')}</p>
+                        <div className="text-2xl font-bold text-purple-600 mb-1">
+                          63%
+                        </div>
+                        <p className="text-gray-600 text-sm">
+                          {t("dashboard.avgProgress")}
+                        </p>
                       </div>
                     </div>
 
@@ -148,7 +178,9 @@ export default function Dashboard() {
                             {/* Progress Bar */}
                             <div className="mb-3">
                               <div className="flex items-center justify-between mb-1">
-                                <span className="text-sm text-gray-600">{t('dashboard.progress')}</span>
+                                <span className="text-sm text-gray-600">
+                                  {t("dashboard.progress")}
+                                </span>
                                 <span className="text-sm font-semibold text-gray-900">
                                   {course.progress}%
                                 </span>
@@ -162,7 +194,7 @@ export default function Dashboard() {
                             </div>
                           </div>
                           <Button variant="outline" size="sm">
-                            {t('dashboard.continue')}
+                            {t("dashboard.continue")}
                           </Button>
                         </div>
                       ))}
@@ -175,7 +207,7 @@ export default function Dashboard() {
               {activeTab === "certificates" && (
                 <div className="bg-white rounded-lg shadow-sm p-6">
                   <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                    {t('dashboard.certificates')}
+                    {t("dashboard.certificates")}
                   </h2>
 
                   {certificates.length > 0 ? (
@@ -192,12 +224,20 @@ export default function Dashboard() {
                                 {cert.course}
                               </h3>
                               <p className="text-sm text-gray-600">
-                                {t('dashboard.completedOn', 'Completed on {date}').replace('{date}', new Date(cert.completedDate).toLocaleDateString())}
+                                {t(
+                                  "dashboard.completedOn",
+                                  "Completed on {date}",
+                                ).replace(
+                                  "{date}",
+                                  new Date(
+                                    cert.completedDate,
+                                  ).toLocaleDateString(),
+                                )}
                               </p>
                             </div>
                           </div>
                           <Button variant="outline" size="sm">
-                            {t('dashboard.viewCertificate')}
+                            {t("dashboard.viewCertificate")}
                           </Button>
                         </div>
                       ))}
@@ -206,7 +246,7 @@ export default function Dashboard() {
                     <div className="text-center py-12">
                       <Award className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                       <p className="text-gray-600">
-                        {t('dashboard.noCertificates')}
+                        {t("dashboard.noCertificates")}
                       </p>
                     </div>
                   )}
@@ -216,18 +256,20 @@ export default function Dashboard() {
               {/* Settings Tab */}
               {activeTab === "settings" && (
                 <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('dashboard.settings')}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                    {t("dashboard.settings")}
+                  </h2>
 
                   <div className="space-y-6">
                     {/* Account Settings */}
                     <div className="pb-6 border-b border-gray-200">
                       <h3 className="font-semibold text-gray-900 mb-4">
-                        {t('dashboard.accountSettings')}
+                        {t("dashboard.accountSettings")}
                       </h3>
                       <div className="space-y-4">
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-2">
-                            {t('dashboard.email')}
+                            {t("dashboard.email")}
                           </label>
                           <input
                             type="email"
@@ -238,7 +280,7 @@ export default function Dashboard() {
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-2">
-                            {t('dashboard.fullName')}
+                            {t("dashboard.fullName")}
                           </label>
                           <input
                             type="text"
@@ -252,7 +294,7 @@ export default function Dashboard() {
                     {/* Preferences */}
                     <div className="pb-6 border-b border-gray-200">
                       <h3 className="font-semibold text-gray-900 mb-4">
-                        {t('dashboard.preferences')}
+                        {t("dashboard.preferences")}
                       </h3>
                       <div className="space-y-3">
                         <label className="flex items-center gap-3">
@@ -262,7 +304,7 @@ export default function Dashboard() {
                             className="w-4 h-4 rounded border-gray-300"
                           />
                           <span className="text-gray-700">
-                            {t('dashboard.emailRecommendations')}
+                            {t("dashboard.emailRecommendations")}
                           </span>
                         </label>
                         <label className="flex items-center gap-3">
@@ -272,7 +314,7 @@ export default function Dashboard() {
                             className="w-4 h-4 rounded border-gray-300"
                           />
                           <span className="text-gray-700">
-                            {t('dashboard.notifyNewCourses')}
+                            {t("dashboard.notifyNewCourses")}
                           </span>
                         </label>
                       </div>
@@ -280,8 +322,12 @@ export default function Dashboard() {
 
                     {/* Danger Zone */}
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-4">{t('dashboard.dangerZone')}</h3>
-                      <Button variant="destructive">{t('dashboard.deleteAccount')}</Button>
+                      <h3 className="font-semibold text-gray-900 mb-4">
+                        {t("dashboard.dangerZone")}
+                      </h3>
+                      <Button variant="destructive">
+                        {t("dashboard.deleteAccount")}
+                      </Button>
                     </div>
                   </div>
                 </div>

@@ -5,7 +5,16 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CategoryCard from "@/components/CategoryCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, Code, Briefcase, Palette, TrendingUp, Brain, ArrowRight, Zap } from "lucide-react";
+import {
+  Search,
+  Code,
+  Briefcase,
+  Palette,
+  TrendingUp,
+  Brain,
+  ArrowRight,
+  Zap,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -19,7 +28,8 @@ const mockCourses = [
     students: 45320,
     lessons: 24,
     difficulty: "Beginner" as const,
-    thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
     price: 49,
   },
   {
@@ -31,7 +41,8 @@ const mockCourses = [
     students: 67890,
     lessons: 48,
     difficulty: "Intermediate" as const,
-    thumbnail: "https://images.unsplash.com/photo-1633356122544-f134324ef6cb?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1633356122544-f134324ef6cb?w=400&h=300&fit=crop",
     price: 79,
   },
   {
@@ -43,7 +54,8 @@ const mockCourses = [
     students: 32450,
     lessons: 32,
     difficulty: "Intermediate" as const,
-    thumbnail: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
     price: 59,
   },
   {
@@ -55,7 +67,8 @@ const mockCourses = [
     students: 28930,
     lessons: 40,
     difficulty: "Advanced" as const,
-    thumbnail: "https://images.unsplash.com/photo-1516321318423-f06f70674a78?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1516321318423-f06f70674a78?w=400&h=300&fit=crop",
     price: 89,
   },
   {
@@ -67,7 +80,8 @@ const mockCourses = [
     students: 19840,
     lessons: 28,
     difficulty: "Beginner" as const,
-    thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
     price: 39,
   },
   {
@@ -79,7 +93,8 @@ const mockCourses = [
     students: 54320,
     lessons: 56,
     difficulty: "Advanced" as const,
-    thumbnail: "https://images.unsplash.com/photo-1460925895917-adf4e7bc7501?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1460925895917-adf4e7bc7501?w=400&h=300&fit=crop",
     price: 99,
   },
 ];
@@ -97,22 +112,28 @@ const testimonials = [
   {
     name: "Alex Rodriguez",
     role: "Software Developer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-    content: "This platform completely transformed my career. I went from complete beginner to landing a dev job in 6 months!",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    content:
+      "This platform completely transformed my career. I went from complete beginner to landing a dev job in 6 months!",
     rating: 5,
   },
   {
     name: "Jessica Lee",
     role: "Product Manager",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-    content: "The courses are incredibly well-structured. The instructors are experienced and the community support is amazing.",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+    content:
+      "The courses are incredibly well-structured. The instructors are experienced and the community support is amazing.",
     rating: 5,
   },
   {
     name: "Marcus Thompson",
     role: "Entrepreneur",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop",
-    content: "I started my own business based on the skills I learned here. Best investment I ever made in myself.",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop",
+    content:
+      "I started my own business based on the skills I learned here. Best investment I ever made in myself.",
     rating: 5,
   },
 ];
@@ -130,22 +151,26 @@ export default function Index() {
             {/* Left Content */}
             <div className="animate-slide-up">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                {t('hero.headline')}<br />
-                <span className="text-blue-500">{t('hero.highlightedText')}</span>
+                {t("hero.headline")}
+                <br />
+                <span className="text-blue-500">
+                  {t("hero.highlightedText")}
+                </span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                {t('hero.subtext')}
+                {t("hero.subtext")}
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/courses">
                   <Button size="lg" className="w-full sm:w-auto">
-                    {t('hero.browseCoursesBtn')} <ArrowRight className="w-4 h-4 ml-2" />
+                    {t("hero.browseCoursesBtn")}{" "}
+                    <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
                 <Button size="lg" variant="outline">
-                  {t('hero.startLearningBtn')} <Zap className="w-4 h-4 ml-2" />
+                  {t("hero.startLearningBtn")} <Zap className="w-4 h-4 ml-2" />
                 </Button>
               </div>
 
@@ -153,15 +178,15 @@ export default function Index() {
               <div className="flex gap-8 mt-12 pt-8 border-t border-gray-200">
                 <div>
                   <div className="text-3xl font-bold text-gray-900">50K+</div>
-                  <p className="text-gray-600">{t('hero.activeStudents')}</p>
+                  <p className="text-gray-600">{t("hero.activeStudents")}</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-gray-900">500+</div>
-                  <p className="text-gray-600">{t('hero.expertCourses')}</p>
+                  <p className="text-gray-600">{t("hero.expertCourses")}</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-gray-900">4.8★</div>
-                  <p className="text-gray-600">{t('hero.averageRating')}</p>
+                  <p className="text-gray-600">{t("hero.averageRating")}</p>
                 </div>
               </div>
             </div>
@@ -183,7 +208,7 @@ export default function Index() {
           <div className="relative max-w-2xl mx-auto">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <Input
-              placeholder={t('search.placeholder')}
+              placeholder={t("search.placeholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-12 py-6 text-base border-gray-200"
@@ -197,11 +222,9 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('categories.title')}
+              {t("categories.title")}
             </h2>
-            <p className="text-gray-600 text-lg">
-              {t('categories.subtitle')}
-            </p>
+            <p className="text-gray-600 text-lg">{t("categories.subtitle")}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,10 +240,10 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('popularCourses.title')}
+              {t("popularCourses.title")}
             </h2>
             <p className="text-gray-600 text-lg">
-              {t('popularCourses.subtitle')}
+              {t("popularCourses.subtitle")}
             </p>
           </div>
 
@@ -233,7 +256,8 @@ export default function Index() {
           <div className="text-center">
             <Link to="/courses">
               <Button size="lg" variant="outline">
-                {t('popularCourses.viewAll')} <ArrowRight className="w-4 h-4 ml-2" />
+                {t("popularCourses.viewAll")}{" "}
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
@@ -245,10 +269,10 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('testimonials.title')}
+              {t("testimonials.title")}
             </h2>
             <p className="text-gray-600 text-lg">
-              {t('testimonials.subtitle')}
+              {t("testimonials.subtitle")}
             </p>
           </div>
 
@@ -265,24 +289,24 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {t('cta.title')}
+              {t("cta.title")}
             </h2>
-            <p className="text-blue-100 text-lg mb-8">
-              {t('cta.subtitle')}
-            </p>
+            <p className="text-blue-100 text-lg mb-8">{t("cta.subtitle")}</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
-                {t('cta.startFreeTrialBtn')}
+                {t("cta.startFreeTrialBtn")}
               </Button>
-              <Button size="lg" variant="ghost" className="border border-white hover:bg-white hover:text-blue-500">
-                {t('cta.explorePricingBtn')}
+              <Button
+                size="lg"
+                variant="ghost"
+                className="border border-white hover:bg-white hover:text-blue-500"
+              >
+                {t("cta.explorePricingBtn")}
               </Button>
             </div>
 
-            <p className="text-blue-100 text-sm mt-6">
-              {t('cta.note')}
-            </p>
+            <p className="text-blue-100 text-sm mt-6">{t("cta.note")}</p>
           </div>
         </div>
       </section>

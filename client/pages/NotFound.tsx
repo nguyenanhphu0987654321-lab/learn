@@ -21,14 +21,12 @@ const NotFound = () => {
       <div className="min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-50">
         <div className="text-center">
           <div className="text-8xl font-bold text-gray-200 mb-4">404</div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">{t('notFound.title')}</h1>
-          <p className="text-xl text-gray-600 mb-8">
-            {t('notFound.subtitle')}
-          </p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+            {t("notFound.title")}
+          </h1>
+          <p className="text-xl text-gray-600 mb-8">{t("notFound.subtitle")}</p>
           <Link to="/">
-            <Button size="lg">
-              {t('notFound.returnHome')}
-            </Button>
+            <Button size="lg">{t("notFound.returnHome")}</Button>
           </Link>
         </div>
       </div>

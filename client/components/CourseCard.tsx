@@ -60,7 +60,9 @@ export default function CourseCard({
             <div className="flex items-center gap-2 mb-3">
               <div className="flex items-center gap-1">
                 <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                <span className="font-semibold text-sm text-gray-900">{rating}</span>
+                <span className="font-semibold text-sm text-gray-900">
+                  {rating}
+                </span>
                 <span className="text-sm text-gray-600">({reviews})</span>
               </div>
             </div>
@@ -69,7 +71,9 @@ export default function CourseCard({
             <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
               <div className="flex items-center gap-1">
                 <BookOpen className="w-4 h-4" />
-                <span>{lessons} {t('popularCourses.lessons')}</span>
+                <span>
+                  {lessons} {t("popularCourses.lessons")}
+                </span>
               </div>
               <div className="flex items-center gap-1">
                 <Users className="w-4 h-4" />
@@ -79,7 +83,9 @@ export default function CourseCard({
 
             {/* Difficulty */}
             <div className="mb-4">
-              <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${difficultyColors[difficulty]}`}>
+              <span
+                className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${difficultyColors[difficulty]}`}
+              >
                 {difficulty}
               </span>
             </div>
@@ -91,7 +97,7 @@ export default function CourseCard({
               <span className="font-bold text-lg text-gray-900">${price}</span>
             )}
             <Button size="sm" variant="outline">
-              {t('coursesPage.viewCourse')}
+              {t("coursesPage.viewCourse")}
             </Button>
           </div>
         </div>

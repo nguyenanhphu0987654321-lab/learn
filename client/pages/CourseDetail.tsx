@@ -1,6 +1,13 @@
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { Star, Users, BookOpen, Award, CheckCircle, MessageSquare } from "lucide-react";
+import {
+  Star,
+  Users,
+  BookOpen,
+  Award,
+  CheckCircle,
+  MessageSquare,
+} from "lucide-react";
 import { useParams } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -9,17 +16,21 @@ const mockCourseDetail = {
   id: "1",
   title: "Python for Beginners",
   instructor: "John Smith",
-  instructorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
-  instructorBio: "Senior Software Engineer with 10+ years of experience in Python development.",
+  instructorImage:
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+  instructorBio:
+    "Senior Software Engineer with 10+ years of experience in Python development.",
   rating: 4.8,
   reviews: 2543,
   students: 45320,
   lessons: 24,
   hours: 18,
   difficulty: "Beginner",
-  thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
+  thumbnail:
+    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
   price: 49,
-  description: "Learn Python from scratch with this comprehensive beginner course. Master the fundamentals and build real-world applications.",
+  description:
+    "Learn Python from scratch with this comprehensive beginner course. Master the fundamentals and build real-world applications.",
   whatYouWillLearn: [
     "Python syntax and basic concepts",
     "Working with variables and data types",
@@ -83,7 +94,9 @@ export default function CourseDetail() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">{course.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                {course.title}
+              </h1>
               <p className="text-gray-300 text-lg mb-6">{course.description}</p>
 
               {/* Rating and Stats */}
@@ -91,7 +104,9 @@ export default function CourseDetail() {
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   <span className="font-semibold">{course.rating}</span>
-                  <span className="text-gray-400">({course.reviews.toLocaleString()} reviews)</span>
+                  <span className="text-gray-400">
+                    ({course.reviews.toLocaleString()} reviews)
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-300">
                   <Users className="w-5 h-5" />
@@ -113,8 +128,11 @@ export default function CourseDetail() {
               </div>
 
               {/* CTA Button */}
-              <Button size="lg" className="w-full sm:w-auto sticky bottom-4 sm:sticky-none">
-                {t('courseDetail.enrollNow')} - ${course.price}
+              <Button
+                size="lg"
+                className="w-full sm:w-auto sticky bottom-4 sm:sticky-none"
+              >
+                {t("courseDetail.enrollNow")} - ${course.price}
               </Button>
             </div>
 
@@ -135,16 +153,24 @@ export default function CourseDetail() {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="overview" className="w-full">
             <TabsList className="grid w-full md:w-auto md:grid-cols-3 mb-8 bg-gray-100">
-              <TabsTrigger value="overview">{t('courseDetail.overview')}</TabsTrigger>
-              <TabsTrigger value="curriculum">{t('courseDetail.curriculum')}</TabsTrigger>
-              <TabsTrigger value="reviews">{t('courseDetail.reviews')}</TabsTrigger>
+              <TabsTrigger value="overview">
+                {t("courseDetail.overview")}
+              </TabsTrigger>
+              <TabsTrigger value="curriculum">
+                {t("courseDetail.curriculum")}
+              </TabsTrigger>
+              <TabsTrigger value="reviews">
+                {t("courseDetail.reviews")}
+              </TabsTrigger>
             </TabsList>
 
             {/* Overview Tab */}
             <TabsContent value="overview" className="space-y-8">
               {/* What You'll Learn */}
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('courseDetail.whatYouWillLearn')}</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  {t("courseDetail.whatYouWillLearn")}
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {course.whatYouWillLearn.map((item, index) => (
                     <div key={index} className="flex gap-3">
@@ -157,30 +183,50 @@ export default function CourseDetail() {
 
               {/* Course Info */}
               <div className="bg-gray-50 rounded-lg p-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('courseDetail.courseDetails')}</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  {t("courseDetail.courseDetails")}
+                </h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div>
-                    <div className="text-2xl font-bold text-blue-500 mb-2">{course.hours}</div>
-                    <p className="text-gray-600 text-sm">{t('courseDetail.hoursOfContent')}</p>
+                    <div className="text-2xl font-bold text-blue-500 mb-2">
+                      {course.hours}
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      {t("courseDetail.hoursOfContent")}
+                    </p>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-blue-500 mb-2">{course.lessons}</div>
-                    <p className="text-gray-600 text-sm">{t('popularCourses.lessons')}</p>
+                    <div className="text-2xl font-bold text-blue-500 mb-2">
+                      {course.lessons}
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      {t("popularCourses.lessons")}
+                    </p>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-blue-500 mb-2">{course.difficulty}</div>
-                    <p className="text-gray-600 text-sm">{t('courseDetail.difficulty')}</p>
+                    <div className="text-2xl font-bold text-blue-500 mb-2">
+                      {course.difficulty}
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      {t("courseDetail.difficulty")}
+                    </p>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-blue-500 mb-2">{t('courseDetail.certificate')}</div>
-                    <p className="text-gray-600 text-sm">{t('courseDetail.uponCompletion')}</p>
+                    <div className="text-2xl font-bold text-blue-500 mb-2">
+                      {t("courseDetail.certificate")}
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      {t("courseDetail.uponCompletion")}
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Instructor Profile */}
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('courseDetail.aboutTheInstructor')}</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  {t("courseDetail.aboutTheInstructor")}
+                </h2>
                 <div className="flex gap-6">
                   <img
                     src={course.instructorImage}
@@ -188,7 +234,9 @@ export default function CourseDetail() {
                     className="w-24 h-24 rounded-full object-cover"
                   />
                   <div>
-                    <h3 className="font-semibold text-gray-900 text-lg mb-2">{course.instructor}</h3>
+                    <h3 className="font-semibold text-gray-900 text-lg mb-2">
+                      {course.instructor}
+                    </h3>
                     <p className="text-gray-600">{course.instructorBio}</p>
                   </div>
                 </div>
@@ -198,7 +246,10 @@ export default function CourseDetail() {
             {/* Curriculum Tab */}
             <TabsContent value="curriculum" className="space-y-4">
               {course.curriculum.map((section, sectionIndex) => (
-                <div key={sectionIndex} className="border border-gray-200 rounded-lg overflow-hidden">
+                <div
+                  key={sectionIndex}
+                  className="border border-gray-200 rounded-lg overflow-hidden"
+                >
                   <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
                     <h3 className="font-semibold text-gray-900 flex items-center gap-2">
                       <BookOpen className="w-5 h-5 text-blue-500" />
@@ -207,9 +258,14 @@ export default function CourseDetail() {
                   </div>
                   <div className="divide-y divide-gray-200">
                     {section.lessons.map((lesson, lessonIndex) => (
-                      <div key={lessonIndex} className="px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+                      <div
+                        key={lessonIndex}
+                        className="px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
+                      >
                         <span className="text-gray-700">{lesson.title}</span>
-                        <span className="text-gray-500 text-sm">{lesson.duration}</span>
+                        <span className="text-gray-500 text-sm">
+                          {lesson.duration}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -220,10 +276,15 @@ export default function CourseDetail() {
             {/* Reviews Tab */}
             <TabsContent value="reviews" className="space-y-6">
               {course.reviews.map((review, index) => (
-                <div key={index} className="border-b border-gray-200 pb-6 last:border-b-0">
+                <div
+                  key={index}
+                  className="border-b border-gray-200 pb-6 last:border-b-0"
+                >
                   <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h4 className="font-semibold text-gray-900">{review.author}</h4>
+                      <h4 className="font-semibold text-gray-900">
+                        {review.author}
+                      </h4>
                       <p className="text-sm text-gray-500">{review.date}</p>
                     </div>
                     <div className="flex gap-1">
@@ -250,9 +311,7 @@ export default function CourseDetail() {
       {/* Sticky Enroll Button */}
       <div className="sticky bottom-0 bg-white border-t border-gray-200 shadow-lg md:hidden">
         <div className="container mx-auto px-4 py-4">
-          <Button className="w-full">
-            Enroll Now - ${course.price}
-          </Button>
+          <Button className="w-full">Enroll Now - ${course.price}</Button>
         </div>
       </div>
     </Layout>

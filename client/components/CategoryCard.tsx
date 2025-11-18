@@ -26,7 +26,10 @@ export default function CategoryCard({
         <div>
           <h3 className="font-semibold text-gray-900 mb-1">{name}</h3>
           <p className="text-sm text-gray-600">
-            {courseCount} {courseCount === 1 ? t('categories.course') : t('categories.courses')}
+            {courseCount}{" "}
+            {courseCount === 1
+              ? t("categories.course")
+              : t("categories.courses")}
           </p>
         </div>
       </div>

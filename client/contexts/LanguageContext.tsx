@@ -1,5 +1,11 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Language, getTranslation } from '@/i18n';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from "react";
+import { Language, getTranslation } from "@/i18n";
 
 interface LanguageContextType {
   language: Language;
@@ -7,18 +13,22 @@ interface LanguageContextType {
   t: (key: string, defaultValue?: string) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined,
+);
 
-const LANGUAGE_STORAGE_KEY = 'learnhub_language';
+const LANGUAGE_STORAGE_KEY = "learnhub_language";
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('en');
+  const [language, setLanguageState] = useState<Language>("en");
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Load saved language from localStorage on mount
   useEffect(() => {
-    const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY) as Language | null;
-    if (savedLanguage && ['en', 'vi', 'ja'].includes(savedLanguage)) {
+    const savedLanguage = localStorage.getItem(
+      LANGUAGE_STORAGE_KEY,
+    ) as Language | null;
+    if (savedLanguage && ["en", "vi", "ja"].includes(savedLanguage)) {
       setLanguageState(savedLanguage);
     }
     setIsLoaded(true);
@@ -49,7 +59,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 export function useLanguage() {
   const context = useContext(LanguageContext);
   if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
+    throw new Error("useLanguage must be used within a LanguageProvider");
   }
   return context;
 }

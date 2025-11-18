@@ -23,7 +23,8 @@ const mockCourses = [
     students: 45320,
     lessons: 24,
     difficulty: "Beginner" as const,
-    thumbnail: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
     price: 49,
   },
   {
@@ -35,7 +36,8 @@ const mockCourses = [
     students: 67890,
     lessons: 48,
     difficulty: "Intermediate" as const,
-    thumbnail: "https://images.unsplash.com/photo-1633356122544-f134324ef6cb?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1633356122544-f134324ef6cb?w=400&h=300&fit=crop",
     price: 79,
   },
   {
@@ -47,7 +49,8 @@ const mockCourses = [
     students: 32450,
     lessons: 32,
     difficulty: "Intermediate" as const,
-    thumbnail: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
     price: 59,
   },
   {
@@ -59,7 +62,8 @@ const mockCourses = [
     students: 28930,
     lessons: 40,
     difficulty: "Advanced" as const,
-    thumbnail: "https://images.unsplash.com/photo-1516321318423-f06f70674a78?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1516321318423-f06f70674a78?w=400&h=300&fit=crop",
     price: 89,
   },
   {
@@ -71,7 +75,8 @@ const mockCourses = [
     students: 19840,
     lessons: 28,
     difficulty: "Beginner" as const,
-    thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
     price: 39,
   },
   {
@@ -83,7 +88,8 @@ const mockCourses = [
     students: 54320,
     lessons: 56,
     difficulty: "Advanced" as const,
-    thumbnail: "https://images.unsplash.com/photo-1460925895917-adf4e7bc7501?w=400&h=300&fit=crop",
+    thumbnail:
+      "https://images.unsplash.com/photo-1460925895917-adf4e7bc7501?w=400&h=300&fit=crop",
     price: 99,
   },
 ];
@@ -98,16 +104,17 @@ export default function Courses() {
 
   // Filter by search query
   if (searchQuery) {
-    filteredCourses = filteredCourses.filter((course) =>
-      course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      course.instructor.toLowerCase().includes(searchQuery.toLowerCase())
+    filteredCourses = filteredCourses.filter(
+      (course) =>
+        course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        course.instructor.toLowerCase().includes(searchQuery.toLowerCase()),
     );
   }
 
   // Filter by difficulty
   if (filterDifficulty !== "all") {
     filteredCourses = filteredCourses.filter(
-      (course) => course.difficulty === filterDifficulty
+      (course) => course.difficulty === filterDifficulty,
     );
   }
 
@@ -127,9 +134,14 @@ export default function Courses() {
       {/* Header */}
       <section className="bg-gradient-to-br from-blue-50 to-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('coursesPage.title')}</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            {t("coursesPage.title")}
+          </h1>
           <p className="text-gray-600 text-lg">
-            {t('coursesPage.subtitle', `Choose from ${mockCourses.length} expert-led courses`).replace('{count}', mockCourses.length.toString())}
+            {t(
+              "coursesPage.subtitle",
+              `Choose from ${mockCourses.length} expert-led courses`,
+            ).replace("{count}", mockCourses.length.toString())}
           </p>
         </div>
       </section>
@@ -143,16 +155,16 @@ export default function Courses() {
               <div className="bg-gray-50 rounded-lg p-6 sticky top-20">
                 <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
                   <SlidersHorizontal className="w-4 h-4" />
-                  {t('coursesPage.filters')}
+                  {t("coursesPage.filters")}
                 </h3>
 
                 {/* Search */}
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    {t('coursesPage.search')}
+                    {t("coursesPage.search")}
                   </label>
                   <Input
-                    placeholder={t('coursesPage.searchPlaceholder')}
+                    placeholder={t("coursesPage.searchPlaceholder")}
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="bg-white"
@@ -162,17 +174,28 @@ export default function Courses() {
                 {/* Difficulty */}
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    {t('coursesPage.difficulty')}
+                    {t("coursesPage.difficulty")}
                   </label>
-                  <Select value={filterDifficulty} onValueChange={setFilterDifficulty}>
+                  <Select
+                    value={filterDifficulty}
+                    onValueChange={setFilterDifficulty}
+                  >
                     <SelectTrigger className="bg-white">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="all">{t('coursesPage.allLevels')}</SelectItem>
-                      <SelectItem value="Beginner">{t('popularCourses.difficulty.beginner')}</SelectItem>
-                      <SelectItem value="Intermediate">{t('popularCourses.difficulty.intermediate')}</SelectItem>
-                      <SelectItem value="Advanced">{t('popularCourses.difficulty.advanced')}</SelectItem>
+                      <SelectItem value="all">
+                        {t("coursesPage.allLevels")}
+                      </SelectItem>
+                      <SelectItem value="Beginner">
+                        {t("popularCourses.difficulty.beginner")}
+                      </SelectItem>
+                      <SelectItem value="Intermediate">
+                        {t("popularCourses.difficulty.intermediate")}
+                      </SelectItem>
+                      <SelectItem value="Advanced">
+                        {t("popularCourses.difficulty.advanced")}
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -180,17 +203,25 @@ export default function Courses() {
                 {/* Sort */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    {t('coursesPage.sortBy')}
+                    {t("coursesPage.sortBy")}
                   </label>
                   <Select value={sortBy} onValueChange={setSortBy}>
                     <SelectTrigger className="bg-white">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="popular">{t('coursesPage.mostPopular')}</SelectItem>
-                      <SelectItem value="rating">{t('coursesPage.highestRated')}</SelectItem>
-                      <SelectItem value="price-low">{t('coursesPage.priceLowToHigh')}</SelectItem>
-                      <SelectItem value="price-high">{t('coursesPage.priceHighToLow')}</SelectItem>
+                      <SelectItem value="popular">
+                        {t("coursesPage.mostPopular")}
+                      </SelectItem>
+                      <SelectItem value="rating">
+                        {t("coursesPage.highestRated")}
+                      </SelectItem>
+                      <SelectItem value="price-low">
+                        {t("coursesPage.priceLowToHigh")}
+                      </SelectItem>
+                      <SelectItem value="price-high">
+                        {t("coursesPage.priceHighToLow")}
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -209,10 +240,10 @@ export default function Courses() {
                 <div className="text-center py-12">
                   <Search className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {t('coursesPage.noResults')}
+                    {t("coursesPage.noResults")}
                   </h3>
                   <p className="text-gray-600">
-                    {t('coursesPage.noResultsText')}
+                    {t("coursesPage.noResultsText")}
                   </p>
                 </div>
               )}
