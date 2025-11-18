@@ -216,18 +216,18 @@ export default function Dashboard() {
               {/* Settings Tab */}
               {activeTab === "settings" && (
                 <div className="bg-white rounded-lg shadow-sm p-6">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Settings</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('dashboard.settings')}</h2>
 
                   <div className="space-y-6">
                     {/* Account Settings */}
                     <div className="pb-6 border-b border-gray-200">
                       <h3 className="font-semibold text-gray-900 mb-4">
-                        Account Settings
+                        {t('dashboard.accountSettings')}
                       </h3>
                       <div className="space-y-4">
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-2">
-                            Email
+                            {t('dashboard.email')}
                           </label>
                           <input
                             type="email"
@@ -238,7 +238,7 @@ export default function Dashboard() {
                         </div>
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-2">
-                            Full Name
+                            {t('dashboard.fullName')}
                           </label>
                           <input
                             type="text"
@@ -252,7 +252,7 @@ export default function Dashboard() {
                     {/* Preferences */}
                     <div className="pb-6 border-b border-gray-200">
                       <h3 className="font-semibold text-gray-900 mb-4">
-                        Preferences
+                        {t('dashboard.preferences')}
                       </h3>
                       <div className="space-y-3">
                         <label className="flex items-center gap-3">
@@ -262,7 +262,7 @@ export default function Dashboard() {
                             className="w-4 h-4 rounded border-gray-300"
                           />
                           <span className="text-gray-700">
-                            Email me about course recommendations
+                            {t('dashboard.emailRecommendations')}
                           </span>
                         </label>
                         <label className="flex items-center gap-3">
@@ -272,7 +272,7 @@ export default function Dashboard() {
                             className="w-4 h-4 rounded border-gray-300"
                           />
                           <span className="text-gray-700">
-                            Notify me when new courses are available
+                            {t('dashboard.notifyNewCourses')}
                           </span>
                         </label>
                       </div>
@@ -280,8 +280,8 @@ export default function Dashboard() {
 
                     {/* Danger Zone */}
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-4">Danger Zone</h3>
-                      <Button variant="destructive">Delete Account</Button>
+                      <h3 className="font-semibold text-gray-900 mb-4">{t('dashboard.dangerZone')}</h3>
+                      <Button variant="destructive">{t('dashboard.deleteAccount')}</Button>
                     </div>
                   </div>
                 </div>
