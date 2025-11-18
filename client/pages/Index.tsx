@@ -265,23 +265,23 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Start Learning?
+              {t('cta.title')}
             </h2>
             <p className="text-blue-100 text-lg mb-8">
-              Join thousands of students already learning on LearnHub. Get started today with your free trial.
+              {t('cta.subtitle')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
-                Start Free Trial
+                {t('cta.startFreeTrialBtn')}
               </Button>
               <Button size="lg" variant="ghost" className="border border-white hover:bg-white hover:text-blue-500">
-                Explore Pricing
+                {t('cta.explorePricingBtn')}
               </Button>
             </div>
 
             <p className="text-blue-100 text-sm mt-6">
-              No credit card required. 7-day free access to all premium courses.
+              {t('cta.note')}
             </p>
           </div>
         </div>
