@@ -89,6 +89,7 @@ const mockCourses = [
 ];
 
 export default function Courses() {
+  const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("popular");
   const [filterDifficulty, setFilterDifficulty] = useState("all");
