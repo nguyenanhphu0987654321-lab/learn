@@ -119,6 +119,7 @@ const testimonials = [
 
 export default function Index() {
   const [searchQuery, setSearchQuery] = useState("");
+  const { t } = useLanguage();
 
   return (
     <Layout>
@@ -129,22 +130,22 @@ export default function Index() {
             {/* Left Content */}
             <div className="animate-slide-up">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                Learn Anything,<br />
-                <span className="text-blue-500">Become Anything</span>
+                {t('hero.headline')}<br />
+                <span className="text-blue-500">{t('hero.highlightedText')}</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Access thousands of expert-led courses across technology, business, design, and more. Start learning today and transform your future.
+                {t('hero.subtext')}
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/courses">
                   <Button size="lg" className="w-full sm:w-auto">
-                    Browse Courses <ArrowRight className="w-4 h-4 ml-2" />
+                    {t('hero.browseCoursesBtn')} <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
                 <Button size="lg" variant="outline">
-                  Start Learning <Zap className="w-4 h-4 ml-2" />
+                  {t('hero.startLearningBtn')} <Zap className="w-4 h-4 ml-2" />
                 </Button>
               </div>
 
@@ -152,15 +153,15 @@ export default function Index() {
               <div className="flex gap-8 mt-12 pt-8 border-t border-gray-200">
                 <div>
                   <div className="text-3xl font-bold text-gray-900">50K+</div>
-                  <p className="text-gray-600">Active Students</p>
+                  <p className="text-gray-600">{t('hero.activeStudents')}</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-gray-900">500+</div>
-                  <p className="text-gray-600">Expert Courses</p>
+                  <p className="text-gray-600">{t('hero.expertCourses')}</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-gray-900">4.8★</div>
-                  <p className="text-gray-600">Average Rating</p>
+                  <p className="text-gray-600">{t('hero.averageRating')}</p>
                 </div>
               </div>
             </div>
