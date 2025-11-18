@@ -44,12 +44,13 @@ const certificates = [
 ];
 
 export default function Dashboard() {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<"courses" | "certificates" | "settings">("courses");
 
   const menuItems = [
-    { id: "courses", label: "My Courses", icon: BookOpen },
-    { id: "certificates", label: "Certificates", icon: Award },
-    { id: "settings", label: "Settings", icon: Settings },
+    { id: "courses", label: t('dashboard.myCourses'), icon: BookOpen },
+    { id: "certificates", label: t('dashboard.certificates'), icon: Award },
+    { id: "settings", label: t('dashboard.settings'), icon: Settings },
   ];
 
   return (
